@@ -4,6 +4,7 @@ sudo apt-get install build-essential python-dev python-setuptools python-pip pyt
 
 echo 'install the python serial library...'
 sudo pip install Adafruit_BBIO
+sudo pip install pyserial
 
 echo 'copying the dtbofiles'
 sudo cp BB-UART1-00A0.dtbo /lib/firmware/

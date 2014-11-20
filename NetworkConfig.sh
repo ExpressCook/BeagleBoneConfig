@@ -1,16 +1,3 @@
-sudo apt-get update
-
-echo 'install the lxde...'
-sudo apt-get install lxde
-
-echo 'install the qt5...'
-sudo apt-get install qt5-default
-
-#install the OpenCV
-
-#install the callibrator
-
-
 #setting up the network
 #edit the interface file
 sudo nano /etc/network/interfaces
@@ -32,17 +19,3 @@ sudo nano /etc/modprobe.d/8192cu.conf
   # Disable power saving
  options 8192cu rtw_power_mgnt=0 rtw_enusbss=1 rtw_ips_mode=1 
 
-#setting up the serial port
-echo 'install the python...'
-sudo apt-get install build-essential python-dev python-setuptools python-pip python-smbus -y
-
-echo 'install the python serial library...'
-sudo pip install Adafruit_BBIO
-
-echo 'copying the dtbofiles'
-sudo cp BB-UART1-00A0.dtbo /lib/firmware/
-sudo cp BB-UART2-00A0.dtbo /lib/firmware/
-sudo cp BB-UART4-00A0.dtbo /lib/firmware/
-
-echo 'rebooting now'
-sudo reboot

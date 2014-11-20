@@ -1,7 +1,7 @@
 echo 'install the lxde...'
 sudo apt-get install lxde
 
-echo 'install the qt5'
+echo 'install the qt5...'
 sudo apt-get install qt5-default
 
 #install the OpenCV
@@ -10,12 +10,7 @@ sudo apt-get install qt5-default
 
 
 #setting up the network
-<<<<<<< HEAD
 #edit the interface file
-
-#setting up the serial port
-#copy the dtbo file
-=======
 sudo nano /etc/network/interfaces
 # Uncomment the following section:
 #auto wlan0
@@ -35,5 +30,7 @@ sudo nano /etc/modprobe.d/8192cu.conf
   # Disable power saving
  options 8192cu rtw_power_mgnt=0 rtw_enusbss=1 rtw_ips_mode=1 
 
+#setting up the serial port
+#copy the dtbo file
+ 
 sudo reboot
->>>>>>> 33c992556f50c763ac9b91988f2fde009a6f340f

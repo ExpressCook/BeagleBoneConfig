@@ -17,3 +17,14 @@ sudo nano /etc/network/interfaces
 # ctrl+o
 #ctrl+x
 
+# In case of issues of frequent Wi-fi dropout issues:
+#first, ensure it is connected to direct power.
+#second do the following:
+
+#Create and edit a new file in /etc/modprobe.d/8192cu.conf
+sudo nano /etc/modprobe.d/8192cu.conf
+#and paste the following in
+  # Disable power saving
+ options 8192cu rtw_power_mgnt=0 rtw_enusbss=1 rtw_ips_mode=1 
+
+sudo reboot

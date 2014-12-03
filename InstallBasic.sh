@@ -14,3 +14,6 @@ sudo apt-get install xinput-calibrator
 
 echo 'install the gdb server...'
 sudo apt-get install gdbserver
+
+echo 'create qt directory'
+mkdir ~/qt

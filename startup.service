@@ -1,0 +1,10 @@
+[Unit] 
+Description=start the express cook service 
+After=syslog.target network.target 
+
+[Service] 
+Type=simple 
+ExecStart= ~/BeagleBoneConfig/startup.sh 
+
+[Install] 
+WantedBy=multi-user.target
